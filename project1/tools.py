@@ -80,8 +80,8 @@ def key_generation(val):
     subk_3 = "0011100110011000"
     subk_6 = "01001011110111101000010111101100"
     subk_4 = r_shift(subk_3,2)
-    subk_2 = "1001111101010000"
-    subk_5 = "0000011010010100"
+    subk_2 = "1110001101000000"
+    subk_5 = "0111010110110101"
     return (subk_1,subk_2,subk_3,subk_4,subk_5,subk_6)
 def encryption(plaintext,keys,df_permutation,sboxes):
     (subk_1, subk_2, subk_3, subk_4, subk_5, subk_6) = keys

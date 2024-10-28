@@ -24,11 +24,9 @@ plaintext_list = [bin(int(given_pairs[i][0],16))[2:].zfill(64) for i in range(0,
 ciphertext_list = [bin(int(given_pairs[i][1],16))[2:].zfill(64) for i in range(0,4)]
 
 print("Starting Encryption ...")
+print("-----------------------")
+keys = key_generation()
 count = 0
-million = 0
-val = 0
-
-keys = key_generation(val)
 for i in range(0,len(plaintext_list)):
     plaintext = plaintext_list[i]
     ciphertext = ciphertext_list[i]
@@ -38,34 +36,7 @@ for i in range(0,len(plaintext_list)):
     print(f"ciphertext: {hex_cipher}")
     if hex_cipher == result:
         print("Correct")
+        count += 1
     print("----------------------------------------")
-
-
-
-while 1 :
-    if count == 1000000:
-        count = 0
-        million += 1
-        print(f"trial : {1000000*million}")
-    keys = key_generation(val)
-    plaintext = plaintext_list[0]
-    ciphertext = ciphertext_list[0]
-    result = encryption(plaintext,keys,df_permutation,sboxes)
-    count += 1
-    val += 1
-    if result != ciphertext:
-        continue
-    else :
-        check = 0
-        for i in range(1,len(plaintext_list)):
-            plaintext = plaintext_list[i]
-            ciphertext = ciphertext_list[i]
-            result = encryption(plaintext,keys,df_permutation,sboxes)
-            if result != ciphertext:
-                check = 1
-        if check ==0:
-            print("Founded !")
-            print(keys)
-            break
-        else:
-            continue
+if count == 4:
+    print("Project 1 successfully doned")

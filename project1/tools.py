@@ -74,7 +74,7 @@ def permutation(df_permutation,input):
     return result    
 
 # Encryption algorithm
-def key_generation(val):
+def key_generation():
     # subkey6 is gained by analysis
     subk_1 = "1010011011001100"
     subk_3 = "0011100110011000"
@@ -83,6 +83,7 @@ def key_generation(val):
     subk_2 = "1110001101000000"
     subk_5 = "0111010110110101"
     return (subk_1,subk_2,subk_3,subk_4,subk_5,subk_6)
+
 def encryption(plaintext,keys,df_permutation,sboxes):
     (subk_1, subk_2, subk_3, subk_4, subk_5, subk_6) = keys
     block = []

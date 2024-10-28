@@ -19,12 +19,6 @@ print(bin(inverse_mod("1111",2**4))[2:].zfill(4))
 res = multiplication((bin(inverse_mod("1111",2**4))[2:].zfill(4)),multiplication("1111","0010",4),4)
 print(res)
 
-
-sibsam = bin(13)[2:].zfill(16)
-sib = bin(10)[2:].zfill(16)
-baeksamsib = multiplication(sibsam,sib,16)
-print(int(baeksamsib,2))
-
 count = 0 
 subk_3 = "0011100110011000"
 subk_4 = "0000111001100110"
@@ -49,5 +43,3 @@ if "0010" == multiplication((bin(inverse_mod("1111",2**4))[2:].zfill(4)),multipl
 
 if count == 6:
     print("All doing well !!")
-
-print(permutation(df_permutation,"1111101101010100"))

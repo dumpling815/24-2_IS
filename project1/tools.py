@@ -75,7 +75,6 @@ def permutation(df_permutation,input):
 
 # Encryption algorithm
 def key_generation():
-    # subkey6 is gained by analysis
     subk_1 = "1010011011001100"
     subk_3 = "0011100110011000"
     subk_6 = "01001011110111101000010111101100"

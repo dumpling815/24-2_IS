@@ -10,7 +10,7 @@ from tools import *
 # -------------Actual Main Function.-------------------------------------------------
 # Reading CSV files
 df_permutation = pd.read_csv('permutation.csv')
-# sb is all 2-dimensional list. key value is 'C0' ~ 'C15'
+# sb is all 2-dimensional list.
 sb1 = get_sbox_from_dataframe(pd.read_csv('s_box_1.csv'))
 sb2 = get_sbox_from_dataframe(pd.read_csv('s_box_2.csv'))
 sb3 = get_sbox_from_dataframe(pd.read_csv('s_box_3.csv'))

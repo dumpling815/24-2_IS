@@ -1,0 +1,38 @@
+Please submit the key and plaintext for each question.
+All plaintexts are human-readable sentences.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Problem 1
+
+The given ciphertext is encrypted using a shift cipher.
+Find the plaintext and the key.
+
+Ciphertext: VDKBNLDSNBNLOTSDQRDBTQHSX
+
+---------------------------------------------------------------------------------------------------------------------
+
+Problem 2
+
+The given ciphertext is encrypted using a Vigenere cipher.
+Find the plaintext and the key. (The key length is 3)
+
+Ciphertext: FFJFSFPYRUSBZLCFMFBIEIMFFZR
+
+(Hint: the plaintext starts with 'A')
+
+---------------------------------------------------------------------------------------------------------------------
+
+Problem 3
+
+The given ciphertext is encrypted by two steps:
+
+Step 1. Vigenere cipher with key length of 3 (The first letter of the vigenere cipher key is "T")
+Step 2. Shift cipher
+
+Find the plaintext and the key, and keys used for Vigenere cipher and the shift cipher.
+
+Ciphertext: YJZAGBATXHVAEVHCZXSOTAIXWZWS
+
+(Hint: The 4th, 7th, 11th, 14th, and 22nd letters of the plaintext are the same!)
+
